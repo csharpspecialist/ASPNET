@@ -107,7 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._5th_Harmony22;
-            this.ClientSize = new System.Drawing.Size(487, 394);
+            this.ClientSize = new System.Drawing.Size(597, 470);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.directionLabel2);
             this.Controls.Add(this.displayLabel);
