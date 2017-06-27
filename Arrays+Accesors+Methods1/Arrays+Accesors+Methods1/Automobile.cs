@@ -9,7 +9,7 @@ namespace Arrays_Accesors_Methods1
 {
     class Automobile
     {
-
+        //declaring accessors
         public string Make { get; set; }
         public string Model { get; set; }
         public string Color { get; set; }

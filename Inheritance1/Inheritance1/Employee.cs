@@ -18,7 +18,7 @@ namespace Inheritance1
         public void PrintFullName()
         {
 
-            Console.WriteLine("Hey there sunshine");
+            Console.WriteLine($"Your manager is {FirstName} {LastName}");
 
         }
 
