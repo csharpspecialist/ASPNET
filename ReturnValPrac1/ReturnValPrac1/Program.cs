@@ -29,8 +29,6 @@ namespace ReturnValPrac1
             WriteLine($"Summed Values = {sum}");
             ReadKey();
 
-
-
         }
 
         
@@ -44,7 +42,7 @@ namespace ReturnValPrac1
         }
 
 
-        static int SumVals(int[] vals)
+        static int SumVals(params int[] vals)
         {
             int sum = 0;
             foreach (int singleval in vals)
@@ -53,6 +51,10 @@ namespace ReturnValPrac1
             }
             return sum;
         }
+
+
+
+
 
     }
 }
