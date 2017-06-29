@@ -14,7 +14,7 @@ namespace Inheritance1
         public string LastName;
         public string Email;
 
-
+        //this is incomplete... I would need an array in the program class to cycle thru the names 
         public void PrintFullName()
         {
 

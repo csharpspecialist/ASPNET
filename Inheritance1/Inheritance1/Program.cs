@@ -21,6 +21,9 @@ namespace Inheritance1
             manager.Address = "2100 Dude Ave";
 
 
+     
+
+
             emp.PrintFullName();
             Console.ReadKey();
         }
