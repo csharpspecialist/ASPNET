@@ -11,24 +11,60 @@ namespace WhileLoopApp
     {
         static void Main(string[] args)
         {
+            WriteLine("Please enter a # less than 20");
+            string answ = Console.ReadLine();
 
-            WriteLine("Please enter a #");
-            int numAnsw = int.Parse(ReadLine());
+            int numChoice = Convert.ToInt32(answ);
 
             int count = 0;
 
-
-            while (count < numAnsw)
+            while (count <= numChoice)
             {
-                WriteLine($"we r counting until we get to {numAnsw} \n" 
+                WriteLine($"we r counting until we get to {numChoice} \n"
                     + $"right now we are at {count}");
                 count++;
             }
+            WriteLine("The loop has ended");
 
 
 
-            WriteLine("Its over!!!");
-            ReadLine();
+            Parsing();
+        }
+
+        private static void Parsing()
+        {
+
+            Random rand = new Random();
+
+            int realNum = rand.Next(1,21);
+
+            int numAnsw;
+
+
+
+            do
+            {
+                WriteLine("Please enter a #");
+                string answ = Console.ReadLine();
+
+                int count = 0;
+                int.TryParse(answ, out numAnsw);
+
+                while (count < numAnsw && numAnsw < 21)
+                {
+                    WriteLine($"we r counting until we get to {numAnsw} \n"
+                        + $"right now we are at {count}");
+                    count++;
+                    WriteLine("Please enter a #");
+                }
+
+
+
+                WriteLine("Its over!!!");
+                ReadLine();
+            } while (numAnsw != realNum);
+            Console.WriteLine("You R A Winna!!!!");
+         
         }
     }
 }
