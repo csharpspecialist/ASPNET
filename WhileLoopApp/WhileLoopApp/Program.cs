@@ -25,6 +25,7 @@ namespace WhileLoopApp
                 count++;
             }
             WriteLine("The loop has ended");
+            Console.ReadLine();
 
 
 
@@ -55,7 +56,7 @@ namespace WhileLoopApp
                     WriteLine($"we r counting until we get to {numAnsw} \n"
                         + $"right now we are at {count}");
                     count++;
-                    WriteLine("Please enter a #");
+                   // WriteLine("Please enter a #");
                 }
 
 
@@ -64,6 +65,7 @@ namespace WhileLoopApp
                 ReadLine();
             } while (numAnsw != realNum);
             Console.WriteLine("You R A Winna!!!!");
+            Console.ReadLine();
          
         }
     }
