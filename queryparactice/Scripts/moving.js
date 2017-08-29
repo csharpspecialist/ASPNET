@@ -22,7 +22,7 @@
      
         var store = document.getElementById('real').value;
 
-        document.getElementById('work').innerHTML = ("hello world...you typed  " + store);
+        document.getElementById('work').innerHTML=("hello Joe  " + store);
     };
 
 
